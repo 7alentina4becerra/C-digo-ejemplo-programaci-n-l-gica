@@ -1,0 +1,18 @@
+% Hechos: Películas y sus géneros
+película(1, "El Padrino", drama).
+película(2, "Matrix", ciencia_ficción).
+película(3, "Titanic", romance).
+película(4, "Jurassic Park", aventura).
+película(5, "Inception", ciencia_ficción).
+película(6, "Forrest Gump", drama).
+
+% Hechos: Preferencias de los espectadores
+prefiere(juan, drama).
+prefiere(juan, ciencia_ficción).
+prefiere(maria, romance).
+prefiere(maria, aventura).
+
+% Regla: Recomendar una película basada en las preferencias
+recomendar_pelicula(Usuario, Pelicula) :-
+    prefiere(Usuario, Genero),         
+    película(_, Pelicula, Genero).
