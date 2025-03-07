@@ -1,3 +1,4 @@
+% El código fué corrido en una página de lenguaje Prolog llamada SWISH.
 % Hechos: Películas y sus géneros
 película(1, "El Padrino", drama).
 película(2, "Matrix", ciencia_ficción).
